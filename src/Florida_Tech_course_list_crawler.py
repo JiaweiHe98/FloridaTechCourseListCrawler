@@ -13,11 +13,15 @@ ws = wb.sheets[0]
 #initiate the row number
 excel_row_num = 1
 
-#course table ranges from page1 to page56
-for page in range(1,57):
+'''
+Change the range to mach the pages you want to parse
+Since there might be a ssl problem with the requests module, we added verify=False to bypass the ssl verification
+'''
+#course table ranges from page1 to page50
+for page in range(1,51):
 
     #get the webpage source and pass it to beautifulsoup
-    source = requests.get(f'https://apps.fit.edu/schedule/main-campus/fall?query=&page={page}').text
+    source = requests.get(f'https://apps.fit.edu/schedule/main-campus/fall?query=&page={page}', verify=False).text
     soup = BeautifulSoup(source, features= 'lxml')
 
     #target the course table
@@ -132,8 +136,12 @@ for page in range(1,57):
             instructor_email = 'None'
         else:
             course_instructor = course_item_instructor.find('a')
-            instructor_email = course_instructor.get('href').replace('mailto:', '')
-            instructor_name = course_instructor.text
+            if course_instructor is None:
+                instructor_email = 'None'
+                instructor_name = 'None'
+            else:
+                instructor_email = course_instructor.get('href').replace('mailto:', '')
+                instructor_name = course_instructor.text
 
         print(instructor_name)
         ws.cells(excel_row_num, 13).value = instructor_name
