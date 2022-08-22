@@ -1,0 +1,102 @@
+{
+  "AHF": { "class": "Aviation", "alert": null },
+  "AVF": { "class": "Aviation", "alert": null },
+  "AVM": { "class": "Aviation", "alert": null },
+  "AVS": { "class": "Aviation", "alert": null },
+  "AVT": { "class": "Aviation", "alert": null },
+  "BUS": { "class": "Business", "alert": null },
+  "EAC": {
+    "class": "Accounting",
+    "alert": "requires enrollment in Florida Tech Online"
+  },
+  "EBA": {
+    "class": "Business",
+    "alert": "requires enrollment in Florida Tech Online"
+  },
+  "EEC": {
+    "class": "Economics",
+    "alert": "requires enrollment in Florida Tech Online"
+  },
+  "EHC": {
+    "class": "Healthcare",
+    "alert": "requires enrollment in Florida Tech Online"
+  },
+  "EHR": {
+    "class": "Human",
+    "alert": "requires enrollment in Florida Tech Online"
+  },
+  "ELA": {
+    "class": "Law",
+    "alert": "requires enrollment in Florida Tech Online"
+  },
+  "EMG": {
+    "class": "Management",
+    "alert": "requires enrollment in Florida Tech Online"
+  },
+  "EMK": {
+    "class": "Marketing",
+    "alert": "requires enrollment in Florida Tech Online"
+  },
+  "EST": {
+    "class": "Statistics",
+    "alert": "requires enrollment in Florida Tech Online"
+  },
+  "MGT": { "class": "Management", "alert": null },
+  "AEE": { "class": "Aerospace", "alert": null },
+  "BCM": { "class": "Biochemistry", "alert": null },
+  "BIO": { "class": "Biology", "alert": null },
+  "BME": { "class": "Biomedical", "alert": null },
+  "CHE": { "class": "Chemical", "alert": null },
+  "CHM": { "class": "Chemistry", "alert": null },
+  "CIS": { "class": "Computer", "alert": null },
+  "CON": { "class": "Construction", "alert": null },
+  "CSE": { "class": "Computer", "alert": null },
+  "CVE": { "class": "Civil", "alert": null },
+  "CYB": { "class": "Information", "alert": null },
+  "ECE": { "class": "Electrical", "alert": null },
+  "EDS": { "class": "Education", "alert": null },
+  "EGN": { "class": "Intro", "alert": null },
+  "ENM": { "class": "Engineering", "alert": null },
+  "ENS": { "class": "Environmental", "alert": null },
+  "EPE": { "class": "Engineering", "alert": null },
+  "FTE": { "class": "Flight", "alert": null },
+  "HCD": { "class": "Human", "alert": null },
+  "ISC": { "class": "Interdisciplinary", "alert": null },
+  "MAR": { "class": "Marine", "alert": null },
+  "MEE": { "class": "Mechanical", "alert": null },
+  "MET": { "class": "Meteorology", "alert": null },
+  "MTH": { "class": "Mathematical", "alert": null },
+  "OCE": { "class": "Ocean", "alert": null },
+  "OCN": { "class": "Oceanography", "alert": null },
+  "ORP": { "class": "Operations", "alert": null },
+  "PED": { "class": "Physical", "alert": null },
+  "PHY": { "class": "Physics", "alert": null },
+  "SPC": { "class": "Space", "alert": null },
+  "SPS": { "class": "Space", "alert": null },
+  "SUS": { "class": "Sustainability", "alert": null },
+  "SWE": { "class": "Software", "alert": null },
+  "SYS": { "class": "Systems", "alert": null },
+  "ASC": { "class": "Academic", "alert": null },
+  "BEH": { "class": "Behavior", "alert": null },
+  "COM": { "class": "Communication", "alert": null },
+  "CRM": {
+    "class": "Criminal",
+    "alert": "requires enrollment in Florida Tech Online"
+  },
+  "CWE": { "class": "Cooperative", "alert": null },
+  "ESL": { "class": "English", "alert": null },
+  "FYE": { "class": "First", "alert": null },
+  "HSC": {
+    "class": "Homeland",
+    "alert": "requires enrollment in Florida Tech Online"
+  },
+  "HUM": { "class": "Humanities", "alert": null },
+  "LIB": { "class": "Liberal", "alert": null },
+  "LNG": { "class": "Languages", "alert": null },
+  "MSC": { "class": "Military", "alert": null },
+  "MUS": { "class": "Music", "alert": null },
+  "PSF": { "class": "Forensic", "alert": null },
+  "PSY": { "class": "Psychology", "alert": null },
+  "SOC": { "class": "Sociology", "alert": null },
+  "WRI": { "class": "Writing", "alert": null }
+}
