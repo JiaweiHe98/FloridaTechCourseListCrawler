@@ -1,0 +1,56 @@
+{
+  "verify": false,
+  "available_semesters": ["fall", "spring", "summer"],
+  "headers": {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.9999.0 Safari/537.36"},
+  "base_url_fall": "https://apps.fit.edu/schedule/main-campus/fall?query=&page=",
+  "base_url_spring": "https://apps.fit.edu/schedule/main-campus/spring?query=&page=",
+  "base_url_summer": "https://apps.fit.edu/schedule/main-campus/summer?query=&page=",
+  "columns": {
+    "fall": {
+      "crn": 0,
+      "course": 1,
+      "section": 2,
+      "cr": 3,
+      "title": 4,
+      "info": 4,
+      "notes": 5,
+      "days": 6,
+      "times": 7,
+      "place": 8,
+      "instructor": 9,
+      "email": 9,
+      "cap": 10
+    },
+    "spring": {
+      "crn": 0,
+      "course": 1,
+      "section": 2,
+      "cr": 3,
+      "title": 4,
+      "info": 4,
+      "notes": 5,
+      "days": 6,
+      "times": 7,
+      "place": 8,
+      "instructor": 9,
+      "email": 9,
+      "cap": 10
+    },
+    "summer": {
+      "crn": 0,
+      "course": 1,
+      "section": 2,
+      "cr": 3,
+      "title": 4,
+      "info": 4,
+      "notes": 5,
+      "session": 6,
+      "days": 7,
+      "times": 8,
+      "place": 9,
+      "instructor": 10,
+      "email": 10,
+      "cap": 11
+    }
+  }
+}
