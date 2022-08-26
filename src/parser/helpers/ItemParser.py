@@ -54,6 +54,8 @@ def parse_notes(item) -> str or None:
 
 
 def parse_days_time_location(item_days, item_times, item_location):
+
+    # ['MF', 'R]
     day_list = days_pattern.findall(item_days.text)
     time_list = times_pattern.findall(item_times.text)
     location_list = location_pattern.findall(item_location.text)
@@ -77,9 +79,12 @@ def parse_days_time_location(item_days, item_times, item_location):
         except IndexError:
             location = None
 
+        # if days:
+        #     for day in range(len(days)):
+        #         output.append(CourseTime(days[day], time, location))
+
         if days:
-            for day in range(len(days)):
-                output.append(CourseTime(days[day], time, location))
+            output.append(CourseTime(days, time, location))
 
         elif time or location:
             output.append(CourseTime(days, time, location))
