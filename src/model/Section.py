@@ -21,7 +21,7 @@ class Section:
         occupied = int(occupied)
         capacity = int(capacity)
 
-        if capacity < occupied:
+        if capacity <= occupied:
             return True
         return False
 

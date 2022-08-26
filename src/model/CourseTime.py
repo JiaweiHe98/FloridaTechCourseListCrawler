@@ -1,12 +1,12 @@
-from src.pattern.Pattern import day_pattern, time_pattern
+from src.pattern.Pattern import days_pattern, time_pattern
 
 
 class CourseTime:
 
     @staticmethod
-    def format_check(day: str, time: str) -> bool:
+    def format_check(days: str, time: str) -> bool:
 
-        if not day_pattern.match(day):
+        if not days_pattern.match(days):
             return False
 
         if not time_pattern.match(time):
@@ -30,21 +30,22 @@ class CourseTime:
         end = (int(time[5:7]), int(time[7:9]))
         return start, end
 
-    day: str or None
+    days: str or None
     start: tuple[int, int] or None
     end: tuple[int, int] or None
     place: str or None
 
-    def __init__(self, day: str or None, time: str or None, place: str or None):
-        if day and time:
-            format_check_res = CourseTime.format_check(day, time)
+    def __init__(self, days: str or None, time: str or None, place: str or None):
+        if days and time:
+            format_check_res = CourseTime.format_check(days, time)
             if not format_check_res:
-                raise Exception(f'Invalid CourseTime init day: {day} time: {time}')
+                raise Exception(
+                    f'Invalid CourseTime init day: {days} time: {time}')
 
-        if day:
-            self.day = day.upper()
+        if days:
+            self.days = days.upper()
         else:
-            self.day = None
+            self.days = None
 
         if time:
             self.start, self.end = CourseTime.time_transform(time)
