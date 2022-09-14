@@ -1,7 +1,5 @@
 import requests
 import urllib3
-import asyncio
-
 
 def get_html(full_url, headers=None, verify=False):
     if not verify:

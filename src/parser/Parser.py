@@ -121,7 +121,7 @@ class Parser:
         base_url = self.get_semester_url()
         tasks = []
 
-        async with aiohttp.ClientSession() as session:
+        async with aiohttp.ClientSession(connector=aiohttp.TCPConnector(verify_ssl=False)) as session:
             for current_page_num in range(1, self.max_page_num + 1):
                 page_url = base_url + str(current_page_num)
                 tasks.append(asyncio.create_task(self.process_online_page_async(session, page_url)))
